@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        width: 400px;
+        border: 0.5px solid black;
+      }
+      p {
+        background-color: red;
+        color: white;
+        padding: 5px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      input,
+      label,
+      textarea {
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .btn > button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <p>Thông tin danh mục chât liệu</p>
+      <label for="ten">Tên(Title)</label><br />
+      <input type="text" name="ten" id="ten" /><br />
+      <label for="tukhoa">Từ khóa SEO</label><br />
+      <input type="text" name="tukhoa" id="tukhoa" /><br />
+      <label for="mota">Mô tả SEO</label><br />
+      <input type="text" name="mota" id="mota" /><br />
+      <label for="">Ghi chú</label><br />
+      <textarea name="" id=""></textarea><br />
+
+      <label for="">Trạng thái</label>
+      <input type="radio" name="tt" id="hd" />
+      <label for="hd">Hoạt động</label>
+      <input type="radio" name="tt" id="kh" />
+      <label for="kh">Đang khóa</label><br />
+      <div class="btn">
+        <button type="reset">Nhập lại</button
+        ><button type="submit">Ghi lại</button>
+      </div>
+    </form>
+  </body>
+</html>
