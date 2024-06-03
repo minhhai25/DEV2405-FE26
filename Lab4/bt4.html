@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        header,nav,div.left,div.right,div.center,footer{
+            text-align: center;
+            border: 1px solid greenyellow;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .body{
+            display: flex;
+            justify-content: space-between;
+            height: 200px;
+        }
+        .left,.right{
+            width: 20%;
+        }
+        .center{
+            width: 60%;
+            
+        }
+        header, footer{
+            height: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+    <nav> nav</nav>
+    <div class="body">
+      <div class="left">left</div>
+      <div class="center">Body</div>
+      <div class="right">right</div>
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>
