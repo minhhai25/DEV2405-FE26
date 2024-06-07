@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* nav {
+        background-color: antiquewhite;
+      } */
+      li {
+        list-style: none !important;
+      }
+      nav#navtop > ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+      }
+      nav#navtop > ul:hover .menu2 {
+        display: flex;
+      }
+      nav#navtop li {
+        padding: 10px 10px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: antiquewhite;
+      }
+      nav ul li > ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+      }
+      nav#navtop li a {
+        text-decoration: none;
+        display: block;
+      }
+      nav#navtop .menu2 {
+        left: 0;
+        display: none;
+      }
+
+      nav#navtop .menu2 > ul:hover .menu3 {
+        display: flex;
+      }
+      nav#navtop ul.menu2 > li {
+        position: relative;
+      }
+      nav#navtop ul.menu2 > li:hover .menu3 {
+        display: flex;
+      }
+      nav#navtop .menu3 {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+      .menu3 {
+        padding: 0;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navtop">
+      <ul>
+        <li>
+          <a href="#">sản phẩm </a>
+          <ul class="menu2">
+            <li><a href="#">Sản phẩm cấp 2</a></li>
+            <li><a href="#">Sản phẩm cấp 2</a></li>
+            <li><a href="#">Sản phẩm cấp 2</a></li>
+            <li>
+              <a href="#">Sản phẩm cấp 2</a>
+              <ul class="menu3">
+                <li><a href="#">Sản phẩm cấp 3</a></li>
+                <li><a href="#">Sản phẩm cấp 3</a></li>
+                <li><a href="#">Sản phẩm cấp 3</a></li>
+                <li><a href="#">Sản phẩm cấp 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">tin tức </a></li>
+        <li><a href="#">liên hệ </a></li>
+        <li><a href="#">sản phẩm </a></li>
+      </ul>
+    </nav>
+    <section></section>
+  </body>
+</html>

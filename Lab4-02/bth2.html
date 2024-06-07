@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav#navMain {
+        width: 200px;
+        background-color: #ccc;
+      }
+      nav#navMain ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav#navMain ul li {
+        border-bottom: 1px solid black;
+        position: relative;
+      }
+
+      nav#navMain ul li a {
+        text-decoration: none;
+        width: 85%;
+        padding: 10px 15px;
+        display: block;
+      }
+      nav#navMain ul li > ul {
+        position: absolute;
+        top: 0;
+        left: 201px;
+        background-color: #ccc;
+        width: 200px;
+        visibility: hidden;
+      }
+      nav#navMain ul li:hover > ul {
+        visibility: visible;
+      }
+
+      nav#navMain ul li > ul li {
+        border-left: 1px solid black;
+      }
+      li:hover {
+        background-color: white;
+      }
+      li:hover > a {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navMain">
+      <ul>
+        <li>
+          <a href="#">Laptop dell</a>
+          <ul>
+            <li><a href="#">Dell Inspiron</a></li>
+            <li><a href="#">Dell Vostro</a></li>
+            <li><a href="#">Dell XPS</a></li>
+            <li><a href="#">Dell Latitude</a></li>
+            <li>
+              <a href="#">Alienware</a>
+              <ul>
+                <li><a href="#">RAM 4GB</a></li>
+                <li><a href="#">RAM 8GB</a></li>
+                <li><a href="#">RAM 16GB</a></li>
+                <li><a href="#">RAM 32GB</a></li>
+                <li><a href="#">RAM 64GB</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Laptop lenovo</a></li>
+        <li><a href="#">laptop hp</a></li>
+        <li><a href="#">laptop Acer</a></li>
+        <li>
+          <a href="#">laptop Asus</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
