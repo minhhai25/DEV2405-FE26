@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>giải phương trình ax^2+bx+c=0</title>
+  </head>
+  <body>
+    <script>
+      //   var a = prompt("nhập a:");
+      //   var b = prompt("nhập b:");
+      //   var c = prompt("nhập c:");
+      var a = 2,
+        b = 2,
+        c = 2;
+      var delta = b * b - 4 * a * c;
+      if (delta == 0) {
+        document.write(
+          "<div> Phương trình có nghiệm kép là x1=x2=" + (-b / 2) * a + "</div>"
+        );
+      } else if (delta > 0) {
+        document.write(
+          "<div> Phương trình có nghiệm 2 ngiệm x1=" +
+            (-b + math.sqrt(delta)) / (2 * a) +
+            " x2=" +
+            (-b - math.sqrt(delta)) / (2 * a) +
+            "</div>"
+        );
+      } else if (delta < 0) {
+        document.write("<div >Phương trình vo nghiệm</div>");
+      }
+    </script>
+  </body>
+</html>

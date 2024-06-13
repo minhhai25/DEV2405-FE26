@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Login I formation</h1>
+    <form action="" name="form">
+      <label for="">Username:</label>
+      <input type="text" name="Username" />
+      <label for="">Password</label>
+      <input type="password" name="Password" id="" />
+      <button onclick="check()">Login</button>
+
+      <button>reset</button>
+    </form>
+    <script>
+      function check() {
+        if (form.Username.value == "" && form.Password.value == "") {
+          alert("Hãy nhập tên và mật khẩu");
+        } else {
+          alert("mật khẩu password họp lệ");
+        }
+      }
+    </script>
+  </body>
+</html>
