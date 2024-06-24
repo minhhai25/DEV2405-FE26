@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main ul {
+        display: flex;
+        list-style: none;
+      }
+      #main li a {
+        text-decoration: none;
+        padding: 5px;
+        border: 1px solid #000;
+        margin: 5px;
+      }
+      .mauxanh {
+        color: green;
+      }
+      .maudo {
+        color: red;
+      }
+      .mautim {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h3>Chọn màu chữ</h3>
+      <ul class="clearfix">
+        <li><a href="javascript:void(0)" id="mauxanh">Màu xanh</a></li>
+        <li><a href="javascript:void(0)" id="maudo">Màu đỏ</a></li>
+        <li><a href="javascript:void(0)" id="mautim">Màu tím</a></li>
+      </ul>
+      <div id="content" class="clearfix">học lập trình với PHP</div>
+    </div>
+    <script src="../../DEV2405-FE26-off/Lession9-jquery/js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").click(function (e) {
+          console.log(e.target.id);
+          mau = e.target.id;
+          $("#content").addClass(mau);
+        });
+      });
+    </script>
+  </body>
+</html>
